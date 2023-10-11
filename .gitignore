@@ -4,3 +4,7 @@
 .idea/modules.xml
 .idea/testyandexpassport.iml
 .idea/vcs.xml
+*.pyc
+.idea/workspace.xml
+reports/logs/*
+reports/screenshots/*
