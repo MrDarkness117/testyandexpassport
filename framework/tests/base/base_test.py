@@ -24,7 +24,7 @@ class BaseTest:
     def __init__(self, driver=webdriver.Chrome, manager=ChromeDriverManager):
         self.__driver_options = Options()
         self.logger = Logging()
-        prefs = {"profile.managed_default_content_settings.images": 2}
+        prefs = json.load(open(paths["config"] + "selenium_prefs.json", "r", "utf-8").read())
         caps = DesiredCapabilities.CHROME
         caps['goog:loggingPrefs'] = {'performance': 'ALL'}
         self.__driver_options.add_experimental_option('prefs', prefs)
