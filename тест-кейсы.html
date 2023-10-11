@@ -1,0 +1,1960 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+        html {
+            font-size: 16px;
+            font-family: "Open Sans", Helvetica, sans-serif;
+        }
+        body {
+            padding: 50px;
+            max-width: 700px;
+            width: 700px;
+        }
+        .page {
+            overflow: hidden;
+            page-break-after: always;
+            margin-bottom: 250px;
+        }
+        h1 {
+            margin-top: 0.25rem;
+            font-size: 1.5rem;
+        }
+        .row {
+            width: 100%;
+        }
+        .col-3 {
+            width: 25%;
+            float:left;
+        }
+        .col-4 {
+            width: 33.33%;
+            float:left;
+        }
+        .col-12 {
+            width: 100%;
+            float: left;
+        }
+        .param {
+            font-size: 0.875rem;
+            font-weight: normal;
+            word-break: break-word;
+        }
+
+        .color-blocker, .color-critical, .color-major, .color-high {
+            color: #D0021B;
+        }
+
+        .conditions-header {
+            font-size: 0.875rem;
+            font-weight: bold;
+            padding-bottom: 0.25rem;
+        }
+
+        .conditions-data {
+            font-weight: normal;
+            font-size: 0.875rem;
+        }
+
+        .clearfix::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .data-row {
+            margin-top: 1rem;
+        }
+
+        .table-steps table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-steps table td, .table-steps table th {
+            border: 1px solid;
+            padding: 5px 8px;
+        }
+
+        .table-steps img {
+            max-height: 500px;
+        }
+
+        .table-steps {
+            width: 100%;
+        }
+        .table-steps td {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #dedede;
+        }
+        .table-steps th {
+            font-size: 0.875rem; text-align: left;
+        }
+        .table-steps p {
+            margin-bottom: 0;
+        }
+        .steps ol, .steps ul {
+            margin-bottom: 0;
+            padding-left: 1.125rem;
+        }
+        .steps li {
+            font-size: 0.875rem;
+        }
+
+        .step-action p {
+            display: none;
+        }
+
+        .step-content p.data {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            font-size: 0.875rem !important;
+            margin-top: 0 !important;
+        }
+        .description p{
+            font-size: 0.875rem !important;
+            margin-top: 0 !important;
+        }
+
+        .table-steps img,
+        .description img,
+        .markdown img,
+        .steps img {
+            max-width: 100%;
+        }
+
+        .attachments {vertical-align: top;}
+        .attachments .attachment{width:96px;display:inline-block; margin-right: 8px; vertical-align: top}
+        .attachments .attachment-image{width:96px;height:96px;border-radius:6px;background-size:cover !important;}
+        .attachments .attachment-file{width:96px;height:96px;background:#e9e9e9;border-radius:6px;}
+        .attachments .attachment-file .attachment-extension{display:inline-block; text-decoration:none !important;font-weight:500;color:#000; padding-left: 8px; padding-top: 8px; font-size: 0.75rem;}
+        .attachments .attachment .attachment-filename{width:96px;display:block; text-overflow:ellipsis;white-space:nowrap;margin-top:0.5rem;overflow:hidden;text-decoration:none;color:#656565;font-size:0.625rem;}
+        .attachments .attachment a {text-decoration:none !important;border-bottom: 0;}
+    </style>
+    <link rel="stylesheet" href="https://app.qase.io/assets/main/css/fontawesome.min.css?1696601245">
+</head>
+<body>
+                                <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-3
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить ввод символов для поля номера телефона</h1>
+        <div class="description"><p>Необходимо убедиться, что ничего кроме цифер вводиться не должно, знак + вводится по умолчанию</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Not set</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Other</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Открыта страница <a href="https://passport.yandex.ru" target="_blank">https://passport.yandex.ru</a>;<br />
+Пользователь не авторизован, поле адреса почты пустое.</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Поставить фокус в поле input для номера телефона</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести значение содержащее символы и цифры</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Например, 1-477-935-8478</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>В поле передались только цифры, подставился + в самом начале</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Очистить поле ввода</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести значение содержащее слова и цифры</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>абв79где1ты67163300</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>В поле передалось +7 (916) 716-33-00</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-5
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Требуется ввод пароля при вводе адреса почты</h1>
+        <div class="description"></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-ban color-blocker"></i> Blocker</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Security</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">E2E</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Открыта страница авторизации</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Поставить курсор на поле почты</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести существующий адрес</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>miromantsov@yandex.ru</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать кнопку "Войти"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается страница ввода пароля</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести несуществующий адрес из выборки <a href="https://jsonplaceholder.typicode.com/users" target="_blank">https://jsonplaceholder.typicode.com/users</a> и поменять адрес почты на @ya.ru</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p><a href="https://jsonplaceholder.typicode.com/users" target="_blank">https://jsonplaceholder.typicode.com/users</a></p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">5</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать кнопку "Войти"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Выводится ошибка об отсутствии такого адреса в БД, недопустимости адреса либо некорректных данных</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-6
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить переход на этап ввода пароля и ввести пароль</h1>
+        <div class="description"><p>Нужно убедиться что меняется страница ввода почты на страницу ввода пароля</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-ban color-blocker"></i> Blocker</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">API</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">Yes</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Пользователь не авторизован, открыто окно с вводом почты</p></div>
+                    </div>
+                                                    <div class="data-row">
+                        <div class="conditions-header">Post-conditions</div>
+                        <div class="conditions-data markdown"><p>Совершить де-авторизацию</p></div>
+                    </div>
+                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Поставить фокус на поле почты</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести адрес почты</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p><a href="https://jsonplaceholder.typicode.com/users" target="_blank">https://jsonplaceholder.typicode.com/users</a></p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Адреса из этих данных не подойдут, Yandex будет ругаться на некорректность данных. Можно использовать условно существующий</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать кнопку "Войти"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается экран с вводом пароля</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести пароль</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p><a href="https://jsonplaceholder.typicode.com/users" target="_blank">https://jsonplaceholder.typicode.com/users</a>, поле "website"</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">5</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать кнопку "Подтвердить"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Ошибка о некорректности данных</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-7
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить переход страницы на ввод кода из СМС и проверить длину строки кода из СМС</h1>
+        <div class="description"><p>Необходимо проверить переход на страницу ввода кода из СМС, проверить длину и формат принимаемых данных строки</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-ban color-blocker"></i> Blocker</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">API</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">Yes</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Пользователь не авторизован</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести номер телефона</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p><a href="https://jsonplaceholder.typicode.com/users" target="_blank">https://jsonplaceholder.typicode.com/users</a></p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать "Войти"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается ввод кода из СМС</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести в поле кода фразу</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>abc123gde456</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Вводится "123456"</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести в поле кода фразу</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>112233445566</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Вводится "112233"</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-8
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Регистрация нового пользователя</h1>
+        <div class="description"><p>Зарегистрировать пользователя "Для себя"</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-ban color-blocker"></i> Blocker</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-up color-high"></i> High</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">API</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Пользователь не авторизован</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать "Создать ID"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается экран с регистрацией номера</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать "Для себя" в выплывающем меню</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Добавить номер телефона</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p><a href="https://jsonplaceholder.typicode.com/users" target="_blank">https://jsonplaceholder.typicode.com/users</a></p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать "Продолжить"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается окно с вводом кода из СМС</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">5</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Проверить максимальную длину строки кода из СМС</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Максимальная длина равна 6</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                                        <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-2
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить максимальную длину строки для телефона (14)</h1>
+        <div class="description"><p>tst_inputMaxLength - применить эквивалентное и граничное тестирование для проверки длины строки.</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-down color-low"></i> Low</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">E2E</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Should be automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Поле ввода - пустое</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-4
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Поле почты выдает ошибку если отсутствует знак &quot;@&quot;</h1>
+        <div class="description"></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Negative</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Regression</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">E2E</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Should be automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Открыта страница авторизации, пользователь не авторизован</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Поставить фокус в поле почты</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести в поле почты информацию</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>yandex.ru</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать на "Войти"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Возвращается ошибка: "Логин введен некорректно или удален"</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-1
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить максимальную длину строки для почты</h1>
+        <div class="description"><p>tst_inputMaxLength - применить эквивалентное и граничное тестирование для проверки длины строки.</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-down color-low"></i> Low</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Functional</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">E2E</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Should be automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Поле ввода - пустое</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-9
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить авторизацию через Google</h1>
+        <div class="description"></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Not set</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Regression</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Пользователь не авторизован, открыта страница авторизации</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать на авторизацию через Google</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Выходит всплывающее окно с авторизацией через Google</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести данные авторизации Google</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Подтвердить данные авторизации</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Яндекс принимает данные, открывается новый профиль, либо ранее созданный</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-10
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить авторизацию через VK</h1>
+        <div class="description"></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Regression</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">Yes</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Пользователь не авторизован ни в Яндекс, ни в VK; Открыто окно авторизации</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать на кнопку VK</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается всплывающее окно авторизации VK</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести данные авторизации</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Подтвердить данные авторизации</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Данные передаются в Яндекс, открывается личный профиль, либо создается новый с использованием номера телефона.</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-14
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить авторизацию через дополнительные методы</h1>
+        <div class="description"></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-down color-minor"></i> Minor</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-down color-low"></i> Low</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Regression</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">Yes</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Пользователь не авторизован ни в Яндекс, ни в выбранной соцсети; Открыто окно авторизации</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать на кнопку Facebook</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается всплывающее окно авторизации Facebook</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести данные авторизации</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Подтвердить данные авторизации</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Данные передаются в Яндекс, открывается личный профиль, либо создается новый с использованием номера телефона.</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Повторить шаги для: Одноклассники, Mail.ru, Twitter</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-13
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Проверить авторизацию через QR-код</h1>
+        <div class="description"></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-down color-minor"></i> Minor</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Not set</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Other</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Открыта страница авторизации; Тестировщик имеет регистрацию в Яндекс на мобильном устройстве.</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать на QR-код</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Происходит переход на открытие изображения с QR-кодом</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Отсканировать QR-код при помощи мобильного приложения</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Происходит переход на странице авторизации.</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-11
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Создать ID с помощью существующего номера</h1>
+        <div class="description"></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-double-up color-critical"></i> Critical</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Positive</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Smoke</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Пользователь не авторизован; открыта страница авторизации</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Перейти в "Создать ID"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается окно с регистрацией номера телефона</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести существующий номер телефона</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Подтвердить номер телефона</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Приходит код СМС (создается в бэке)</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести код и подтвердить</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Открывается существующий профиль, не создается новый.</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            YPT-12
+                            / suite_AuthPageTests_HighPriority / suite_AuthPageTests_NormalLowPriority
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Нажатие на логотип переносит на страницу ya.ru</h1>
+        <div class="description"></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-down color-minor"></i> Minor</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-arrow-down color-low"></i> Low</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Not set</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Other</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><p>Открыта страница авторизции</p></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Нажать на логотип "Я ID"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Происходит переход на страницу ya.ru</p></td>
+</tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+            </body>
+</html>
