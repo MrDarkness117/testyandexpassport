@@ -1,4 +1,4 @@
-from suites.suite_AuthPageTests import tst_login_page_does_not_authorize_without_password, tst_login_page_enter_symbols_mail, \
+from suites.suite_LoginPageTests import tst_login_page_does_not_authorize_without_password, tst_login_page_enter_symbols_mail, \
                                     tst_login_page_verify_phone_field, tst_login_page_create_new_id, tst_login_page_enter_abstract_code_from_sms
 
 
